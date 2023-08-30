@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/public/icons/logo.png" />
+    <script src="https://kit.fontawesome.com/7010bc15cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style/style.scss" />
+    <link rel="stylesheet" href="/style/scrollbar.scss" />
+    <title>Spotify - Clone</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Top Menu -->
+            <div class="top-menu">
+                <div class="top-menu__link active-link">
+                    <img src="/public/icons/home.png" alt="" />
+                    <a href="/">Home</a>
+                </div>
+                <div class="top-menu__link">
+                    <img src="/public/icons/search.png" alt="" />
+                    <a href="/pages/search/">Search</a>
+                </div>
+            </div>
+
+            <!-- Library -->
+            <div class="library">
+                <div class="library-menu">
+                    <div class="library-menu-top">
+                        <button class="library-playlist-btn">
+                            <img src="/public/icons/playlist.png" alt="">
+                            Your Library
+                        </button>
+                        <div class="library-menu-top-btn">
+                            <button>
+                                <img src="/public/icons/plus.png" alt="">
+                            </button>
+                            <button>
+                                <img src="/public/icons/arrow.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="library-menu-bottom">
+                        <button>Playlist</button>
+                        <button>Artists</button>
+                    </div>
+                </div>
+                <div class="library-scroll">
+                    <div class="library-scroll-row">
+                        <div class="library-search">
+                            <button>
+                                <img src="/public/icons/search.png" alt="">
+                            </button>
+                        </div>
+                        <select>
+                            <option value="">Recent</option>
+                        </select>
+                    </div>
+                    
+                    <ul class="library-scroll-list">
+                        <li class="listitem">
+                            <img src="/public/images/song-cover.jpg" alt="">
+                            <div class="listitem-song-info">
+                                <p>MiyaGi</p>
+                                <span>Artist</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content"></div>
+
+        <!-- Player -->
+        <div class="player">
+            <div class="player__leftside">
+                <div class="song-cover-img">
+                    <img src="/public/images/song-cover.jpg" alt="" />
+                </div>
+                <div class="song-info">
+                    <div class="song-info-name">
+                        <span>Dance Up</span>
+                    </div>
+                    <div class="song-info-artist">
+                        <span>TumaniYO</span>,
+                        <span>Miyagi & Endspiel</span>
+                    </div>
+                </div>
+                <button>
+                    <img src="/public/icons/heart.png" alt="" />
+                </button>
+            </div>
+            <div class="player__middle"></div>
+            <div class="player__rightside"></div>
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
