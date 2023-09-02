@@ -1,7 +1,7 @@
 import axios from "axios";
 
+const token = location.href.split('access_token=').at(-1)
 const baseURL = import.meta.env.VITE_API_KEY
-const token = import.meta.env.VITE_TOKEN
 
 const enums = {
     get: "get",

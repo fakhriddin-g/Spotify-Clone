@@ -1,11 +1,15 @@
 import axios from "axios";
 import { userHTTP } from "./modules/http.request";
 
+let token = location.href.split('access_token=').at(-1)
+localStorage.setItem("myId", token);
+
 const { request } = userHTTP()
 
 request("/v1/me/", "get").then(res => {
-  console.log(res);
+    console.log(res);
 })
+
 
 
 // axios.get("https://api.spotify.com/v1/me/", {

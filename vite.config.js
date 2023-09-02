@@ -15,7 +15,8 @@ export default defineConfig({
               artist: resolve(__dirname, '/pages/artist/index.html'),
               genre: resolve(__dirname, '/pages/genre/index.html'),
               playlist: resolve(__dirname, '/pages/playlist/index.html'),
-              search: resolve(__dirname, '/pages/search/index.html')
+              search: resolve(__dirname, '/pages/search/index.html'),
+              login: resolve(__dirname, '/pages/login/index.html')
           },
       },
   },
