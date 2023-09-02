@@ -34,7 +34,7 @@
 
     .top-menu {
         height: 20%;
-        padding: 1rem 2rem;
+        padding: 0 2rem;
         background-color: var(--grey);
 
         display: flex;
@@ -83,7 +83,7 @@
         }
 
         &-menu {
-            padding: 1rem 2rem;
+            padding: 1rem 2rem 0;
 
             &-top {
                 display: flex;
